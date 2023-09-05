@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 number = 98
-print(f"{number:d} Battery street")
-print()
+#print 98 with battery street statement
+print("{} Battery street".format(number))
+
 
