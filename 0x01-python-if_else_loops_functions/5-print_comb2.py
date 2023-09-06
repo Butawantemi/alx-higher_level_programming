@@ -2,7 +2,7 @@
 
 for j in range(100):
     if j < 99:
-        print(f"{j:02d}, ", end='')
+        print("{:02d},".format(j), end='')
     else:
-        print(f"{j:02d}\n", end='')
+        print("{:02d}\n".format(j), end='')
 
