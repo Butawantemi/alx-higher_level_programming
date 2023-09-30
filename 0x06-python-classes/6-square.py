@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""define a class square"""
 class Square:
+    """intilize a new class square with private instance"""
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
