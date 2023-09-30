@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 class Square:
+    """This is the Square class representing a square by its size"""
     def __init__(self, size):
-        self.__size = size  
-    def area(self):
-        return self.__size ** 2
+        """Initializes a new square with the given size"""
+        self.__size = size 
