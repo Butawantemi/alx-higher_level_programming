@@ -1,5 +1,5 @@
--- lists the number of records with the same score from second_table
--- results should display the score, number of records
+-- script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0
+-- Results should display the score, number of records
 -- The list should be sorted by the number of records (descending)
 
 SELECT score, COUNT(*)

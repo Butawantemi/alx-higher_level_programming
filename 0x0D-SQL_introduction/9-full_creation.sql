@@ -1,5 +1,5 @@
--- creates a table second_table in hbtn_0c_0
--- attributes are id, name, score
+-- script that creates a table second_table in the database hbtn_0c_0
+-- Attributes are id, name, score
 -- If the table second_table already exists, your script should not fail
 -- You are not allowed to use the SELECT and SHOW statements
 
