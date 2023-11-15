@@ -1,4 +1,4 @@
--- script that lists all shows from hbtn_0d_tvshows_rate by their rating.
+-- script that lists all shows from hbtn_0d_tvshows_rate
 -- Each record should display: tv_shows.title - rating sum
 -- Results must be sorted in descending order by the rating
 -- You can use only one SELECT statement
