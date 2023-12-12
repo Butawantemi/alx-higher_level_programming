@@ -3,11 +3,11 @@
 const Rectangle = require('./5-square');
 
 module.exports = class Square extends Rectangle {
-  constr (size) {
+  constructor (size) {
     super(size, size);
   }
 
-  cPrint (c) {
+  charPrint (c) {
     if (c === undefined) {
       c = 'X';
     }
