@@ -5,9 +5,10 @@ const newDict = {};
 
 for (const key in dict) {
   if (newDict[dict[key]] === undefined) {
-    newDict[dict[key]] = (key);
+    newDict[dict[key]] = [key]; // Initialize as an array
   } else {
     newDict[dict[key]].push(key);
   }
 }
-console.log(newDict)
+
+console.log(newDict);
