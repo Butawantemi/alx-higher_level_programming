@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module that connects a python script to a database
+script that lists all cities from the database hbtn_0e_4_usa
 """
 
 if __name__ == "__main__":
@@ -29,10 +29,10 @@ if __name__ == "__main__":
         ORDER BY cities.id"""
     )
 
-    # fetch all the data returned by the query
+    # fetch all the database
     my_data = my_cursor.fetchall()
 
-    # Iterate through the fetched data and print each row
+    # Fetched data and print each row
     for row in my_data:
         print(row)
 

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Module that connects a python script to a database
+script that takes in the name of a state as an argument and
+lists all cities of that state, using the database hbtn_0e_4_usa
 """
 
 if __name__ == "__main__":
@@ -20,7 +21,7 @@ if __name__ == "__main__":
     # Create cursor obj to interact with database
     my_cursor = my_db.cursor()
 
-    # Execute a SELECT query to fetch data
+    # Execute a SELECT query 
     my_cursor.execute(
         """SELECT * FROM cities
         INNER JOIN states
