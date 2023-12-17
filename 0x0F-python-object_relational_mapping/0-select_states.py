@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-script that lists all states from the database hbtn_0e_0_usa
+Module that connects a python script to a database
 """
 
 if __name__ == "__main__":

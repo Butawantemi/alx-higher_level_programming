@@ -8,25 +8,25 @@ from sys import argv
 
 if __name__ == "__main__":
 
-    # conncet db
+    # connect database
     my_db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
                             password=argv[2], db=argv[3])
-    # create cursor object
+    # Create cursor object
     my_cursor = my_db.cursor()
 
-    # execute SELECT query
+    # Execute SELECT query
     my_cursor.execute("SELECT * FROM states WHERE name\
                         LIKE BINARY 'N%' ORDER BY id ASC")
 
-    # fetch all
+    # Fetch all
     my_data = my_cursor.fetchall()
 
-    # iterate and print
+    # Iterate and print
     for rows in my_data:
         print(rows)
 
-    # close all cursors
+    # Close all cursors
     my_cursor.close()
 
-    # close all bds
+    # Close all bds
     my_db.close()
