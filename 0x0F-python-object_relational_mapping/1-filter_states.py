@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 """
-Module that connects python script to a database
+script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa
 """
 if __name__ == "__main__":
     import MySQLdb
     from sys import argv
 
-    # connect the db using command-line arguments
+    # Connect the db using command-line arguments
     my_db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -16,7 +16,7 @@ if __name__ == "__main__":
         db=argv[3]
     )
 
-    # create the cusror && execute the query
+    # Create the cusror && execute the query
     my_cursor = my_db.cursor()
     my_cursor.execute(
         """SELECT * FROM states WHERE name LIKE
@@ -24,10 +24,10 @@ if __name__ == "__main__":
         """
         )
 
-    # fetch the data queried
+    # Fetch the data queried
     my_data = my_cursor.fetchall()
 
-    # iterate to print a tuple
+    # Iterate to print a tuple
     for data in my_data:
         print(data)
 
