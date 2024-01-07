@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""using requests module to fetch"""
+"""Script that fetches https://alx-intranet.hbtn.io/status"""
 
 import requests
 
