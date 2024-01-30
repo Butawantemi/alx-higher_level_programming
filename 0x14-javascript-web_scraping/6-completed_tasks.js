@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-// import the module
+// Import the module
 const request = require('request');
 
-// The first argument is the API URL
+// The first arg is the API URL
 const apiUrl = process.argv[2];
 
 const dictionary = {};
